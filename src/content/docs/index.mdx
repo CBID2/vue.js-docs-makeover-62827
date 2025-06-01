@@ -1,36 +1,33 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to Vue.Js
+description: a remade version of Vue.Js
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Vue.Js + frontend = harmony
   image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    file: ../../assets/images/vue-logo.svg
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
+## What is Vue?
+
+Vue (pronounced like "view") helps you build websites the way you'd organize a toolbox. Instead of scattered tools everywhere, Vue gives you organized components that you can [reuse and combine](/guides/quickstart/). It's built on the web technologies you already know like HTML, CSS, and JavaScript, but makes them work together more smoothly.
+
+## What makes Vue different?
+
+Most frameworks force you to go "all-in" from day one. With Vue, you can try it on one page, add features gradually, and scale up when you're ready. It adapts to your project, not the other way around.
+
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Try the tutorial" icon="pencil" href="https://vuejs.org/tutorial/#step-1">
+	Recommended developers who learn through doing
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Read the Guide" icon="add-document" href="">
+		Recommended developers who prefer learning through reading. 
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Explore our examples" icon="setting" href="https://vuejs.org/examples/#hello-world">
+	Recommended for developers who want to focus on core features
 	</Card>
 </CardGrid>
