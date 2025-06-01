@@ -5,10 +5,12 @@ template: splash
 hero:
   tagline: Vue.Js + frontend = harmony
   image:
-    file: ../../public/vue-logo.svg
+    file: ../../assets/images/vue-logo.svg
+  alt: Vue.js logo
+layout: ../../layouts/splash.astro
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
 ## What is Vue?
 
@@ -21,13 +23,19 @@ Most frameworks force you to go "all-in" from day one. With Vue, you can try it 
 ## Next steps
 
 <CardGrid stagger>
-	<Card title="Try the tutorial" icon="pencil" href="https://vuejs.org/tutorial/#step-1">
-	Recommended developers who learn through doing
+	<Card
+		title="Try the tutorial"
+		icon="pencil"
+		href="https://vuejs.org/tutorial/#step-1">
+		Recommended developers who learn through doing
 	</Card>
 	<Card title="Read the Guide" icon="add-document" href="">
-		Recommended developers who prefer learning through reading. 
+		Recommended developers who prefer learning through reading.
 	</Card>
-	<Card title="Explore our examples" icon="setting" href="https://vuejs.org/examples/#hello-world">
-	Recommended for developers who want to focus on core features
+	<Card
+		title="Explore our examples"
+		icon="setting"
+		href="https://vuejs.org/examples/#hello-world">
+		Recommended for developers who want to focus on core features
 	</Card>
 </CardGrid>
