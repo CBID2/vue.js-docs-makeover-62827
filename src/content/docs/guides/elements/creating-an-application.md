@@ -1,5 +1,8 @@
 ---
 title: Creating an Application
+tableOfContents:
+  minHeadingLevel: 2
+  maxHeadingLevel: 2
 description: A guide to creating an application with Vue.js
 ---
 ## Application Instance
