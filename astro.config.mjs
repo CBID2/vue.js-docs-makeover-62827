@@ -6,12 +6,25 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: "My Docs",
+			title: "Vue.js clone",
 			social: [
 				{
 					icon: "github",
 					label: "GitHub",
-					href: "https://github.com/withastro/starlight",
+					href: "https://github.com/vuejs/",
+				},
+				{
+					icon: "discord",
+					label: "Discord",
+					href: "https://discord.com/invite/vue",
+				},
+				{
+					icon: "x.com",
+					// Using "x(twitter)" to avoid confusion with the old Twitter branding
+					// and to reflect the current branding as of October 2023.
+					// Note: The icon name is still "x" in Starlight, but the label reflects the change.
+					label: "x.com",
+					href: "https://x.com/vuejs",
 				},
 			],
 			sidebar: [
