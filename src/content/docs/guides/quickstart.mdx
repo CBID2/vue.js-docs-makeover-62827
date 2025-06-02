@@ -10,10 +10,10 @@ import { Aside } from "@astrojs/starlight/components";
 
 Want to experience Vue.js immediately without any setup? Try these methods:
 
-[Our playground:](https://play.vuejs.org/#eNp9kVFLwzAQx7/KeS9TmBuiT6MOVAbqg4oKvuSltLeuM01CcpmF0u/utaXVhzEISe7/vyS/yzV459ziEAlXmITMl47XylDtrGfIaZtGzdAoA5CnnJ5fDHsATxy9GSOAKhQrmD2S1ha+rNf52Wyw2m6RSUaynB6QgKlyOmWSCCDZXa2bprsF2jZZStSrpXGR4XBZ2Zz0rULxFYqVLKfTOEcOmTXbsljsgzVSRw+lMLOVKzX5V8elNUHhasRVmArnz3OvsY80H/VsR9n3EX0f6k5T+OYpkD+Qwsnj1BfEg735eKFa9pMp5FFL9gnznYLVsWMc0u6jyQX7X15P+1R1PSlN8Rk2NZMJY1EdaP/Jfb5CaebDidL/cK8XN2NzsP0F+HSp8w==) Perfect for getting practice with the core
-[JSFiddle:](https://jsfiddle.net/yyx990803/2ke1ab0z/) Helpful if your preference is an HTML setup with no builds
-[StackBlitz](https://stackblitz.com/edit/vitejs-vite-jvdgcxbv?file=index.html&terminal=dev): Great for developers who are already familiar with [Node.js](http://Node.js) and other build tools.
-[Scrimba](http://scrimba.com/links/vue-quickstart): An interactive platform that allows you to write and run Vue code directly in your browser.
+- [Our playground:](https://play.vuejs.org/#eNp9kVFLwzAQx7/KeS9TmBuiT6MOVAbqg4oKvuSltLeuM01CcpmF0u/utaXVhzEISe7/vyS/yzV459ziEAlXmITMl47XylDtrGfIaZtGzdAoA5CnnJ5fDHsATxy9GSOAKhQrmD2S1ha+rNf52Wyw2m6RSUaynB6QgKlyOmWSCCDZXa2bprsF2jZZStSrpXGR4XBZ2Zz0rULxFYqVLKfTOEcOmTXbsljsgzVSRw+lMLOVKzX5V8elNUHhasRVmArnz3OvsY80H/VsR9n3EX0f6k5T+OYpkD+Qwsnj1BfEg735eKFa9pMp5FFL9gnznYLVsWMc0u6jyQX7X15P+1R1PSlN8Rk2NZMJY1EdaP/Jfb5CaebDidL/cK8XN2NzsP0F+HSp8w==) Perfect for getting practice with the core
+- [JSFiddle:](https://jsfiddle.net/yyx990803/2ke1ab0z/) Helpful if your preference is an HTML setup with no builds
+- [StackBlitz](https://stackblitz.com/edit/vitejs-vite-jvdgcxbv?file=index.html&terminal=dev): Great for developers who are already familiar with [Node.js](http://Node.js) and other build tools.
+- [Scrimba](http://scrimba.com/links/vue-quickstart): An interactive platform that allows you to write and run Vue code directly in your browser.
 
 ## Install Vue.js
 
@@ -83,9 +83,21 @@ Once the setup is complete, do the following commands to install the dependencie
 
 `cd <your-project-name>`
 
-<TabItem label="npm">sh npm install & npm run dev </TabItem>
-<TabItem label="pnpm">sh pnpm install & pnpm run dev </TabItem>
-<TabItem label="yarn">sh yarn install & yarn dev </TabItem>
-<TabItem label="bun">sh bun install & bun run dev ```</TabItem>
+<TabItem label="npm"> npm install & npm run dev </TabItem>
+<TabItem label="pnpm"> pnpm install & pnpm run dev </TabItem>
+<TabItem label="yarn"> yarn install & yarn dev </TabItem>
+<TabItem label="bun"> bun install & bun run dev ```</TabItem>
 
 </Tabs>
+
+Once you've done building your application, you can build it for production with the following commands:
+
+<Tabs>
+	<TabItem label="npm"> npm run build</TabItem>
+	<TabItem label="pnpm"> pnpm run build</TabItem>
+	<TabItem label="yarn"> yarn build</TabItem>
+	<TabItem label="bun"> bun run build</TabItem>
+</Tabs>
+
+From there, you will see a a production-ready build of your app in the project's `./dist` directory.
+If you more tips on how to deploy your Vue app, check out the [Deployment Guide](https://vuejs.org/guide/best-practices/production-deployment.html).
