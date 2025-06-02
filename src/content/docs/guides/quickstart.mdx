@@ -19,15 +19,16 @@ Want to experience Vue.js immediately without any setup? Try these methods:
 
 If you want to install Vue locally, choose from several methods depending on your needs:
 
-::: note
-Be sure to have the latest version of [Node.js](https://nodejs.org/) installed on your machine.
-:::
+<Aside type="note">
+	Be sure to have the latest version of [Node.js](https://nodejs.org/) installed
+	on your machine.
+</Aside>
 
 <Tabs>
-	<TabItem label="npm">```bash npm create vue@latest ```</TabItem>
-	<TabItem label="pnpm">```bash pnpm create vue@latest ```</TabItem>
+	<TabItem label="npm">```sh npm create vue@latest ```</TabItem>
+	<TabItem label="pnpm">```sh pnpm create vue@latest ```</TabItem>
 	<TabItem label="yarn">
-    ```bash
+    ```sh
     yarn create vue
     ```
     <Aside type="note">
@@ -47,4 +48,33 @@ Be sure to have the latest version of [Node.js](https://nodejs.org/) installed o
 
 </TabItem>
 <TabItem label="bun">```bash bun create vue@latest ```</TabItem>
+</Tabs>
+
+From there, answer the following prompts to set up your Vue project:
+
+```bash
+✔ Project name: … <your-project-name>
+✔ Add TypeScript? … No / Yes
+✔ Add JSX Support? … No / Yes
+✔ Add Vue Router for Single Page Application development? … No / Yes
+✔ Add Pinia for state management? … No / Yes
+✔ Add Vitest for Unit testing? … No / Yes
+✔ Add an End-to-End Testing Solution? … No / Cypress / Nightwatch / Playwright
+✔ Add ESLint for code quality? … No / Yes
+✔ Add Prettier for code formatting? … No / Yes
+✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+
+Scaffolding project in ./<your-project-name>...
+Done.
+```
+
+Once the setup is complete, do the following commands to install the dependencies and start the development server:
+
+<Tabs>
+```sh
+cd <your-project-name>
+    <TabItem label="npm">```sh npm install & npm run dev ```</TabItem>
+    <TabItem label="pnpm">```sh pnpm install & pnpm run dev ```</TabItem>
+    <TabItem label="yarn">```sh yarn install & yarn dev ```</TabItem>
+    <TabItem label="bun">```sh bun install & bun run dev ```</TabItem>
 </Tabs>
