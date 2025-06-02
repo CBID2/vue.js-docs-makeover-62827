@@ -18,11 +18,19 @@ export default defineConfig({
 				{
 					label: "Guides",
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: "quickstart", slug: "guides/quickstart" },
 						{
-							label: "elements",
-							slug: "guides/elements/creating-an-application",
+							label: "Quickstart",
+							slug: "guides/quickstart",
+						},
+						{
+							label: "Elements",
+							items: [
+								{
+									label: "Creating an Application",
+									slug: "guides/elements/creating-an-application",
+								},
+								// Add more nested items here if needed
+							],
 						},
 					],
 				},
