@@ -25,8 +25,22 @@ Be sure to have the latest version of [Node.js](https://nodejs.org/) installed o
 <Tabs>
 	<TabItem label="npm">```bash npm create vue@latest ```</TabItem>
 	<TabItem label="pnpm">```bash pnpm create vue@latest ```</TabItem>
-	<TabItem label="yarn">
-	**For Yarn (v1+):**
-	</TabItem>
-
+	<TabItem label="yarn"> ```bash yarn create vue``` </TabItem>
+	<TabItem label="bun">```bash bun create vue@latest ```</TabItem>
 </Tabs>
+
+::: note
+If you are using Yarn and want to use different version of Vue, you can specify the version like this:
+
+```sh
+ # For Yarn (v1+)
+ $ yarn create vue
+
+ # For Yarn Modern (v2+)
+ $ yarn create vue@latest
+
+ # For Yarn ^v4.11
+ $ yarn dlx create-vue@latest
+```
+
+:::
