@@ -66,7 +66,7 @@ Remember to apply **all** of the configurations before mounting the application.
 
 ## In-DOM Root Component Template
 
-In-DOM root component templates are used to define the structure and content of the root component. They are typically placed within the root component's template section. When combined with Vue, it makes it  easier for users to set up the application without alot of configuration. Here's an example:
+In-DOM root component templates are used to define the structure and content of the root component. They are typically placed within the root component's template section. When combined with Vue, it makes it easier for users to set up the application, especially when [using Vue via a CDN](../quickstart.mdx#using-a-cdn). Here's an example:
 
 ```html
 <template>
