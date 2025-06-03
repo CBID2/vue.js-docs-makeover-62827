@@ -101,3 +101,21 @@ Once you've done building your application, you can build it for production with
 
 From there, you will see a a production-ready build of your app in the project's `./dist` directory.
 If you more tips on how to deploy your Vue app, check out the [Deployment Guide](https://vuejs.org/guide/best-practices/production-deployment.html).
+
+## Using a CDN
+
+If you want to use Vue.js without any build tools, you can include it directly in your HTML file using a CDN. This is a great way to quickly prototype or build small projects.
+
+```html
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+```
+
+Here we are using [unpkg](https://unpkg.com/), but you can also use any CDN that serves npm
+packages, for example [jsdelivr](https://www.jsdelivr.com/package/npm/vue) or [cdnjs](https://cdnjs.com/libraries/vue). Of course, you can also download this
+file and serve it yourself.
+
+<Aside type="note">
+	The Single-File Component (SFC) syntax is not supported in this setup, so
+	consider using the [Vite](https://vitejs.dev/) or [Vue
+	CLI](https://cli.vuejs.org/) tooling instead.
+</Aside>
