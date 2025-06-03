@@ -1,0 +1,42 @@
+---
+title: Template Syntax
+description: A guide on the basics of Vue.js template syntax
+---
+
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Aside } from "@astrojs/starlight/components";
+
+## Template Syntax
+
+Vue.js uses a special syntax to write HTML-like templates. It makes creating dynamic user interfaces easier.
+Vue complies the templates into highly-optimized JavaScript code that updates the DOM efficiently. When combined with Vue's reactivity system, it allows you to build interactive applications with minimal effort.
+
+<Aside type="note" label="tip">
+	Familiar with virtual DOM and prefer to add the JavaScript yourself? Consider
+	writing the render function directly instead of using the templates. Do be
+	aware that it takes longer for them to compile in comparision to the
+	templates.
+</Aside>
+
+## Text Interpolations
+
+Text interpolations are used to display dynamic data in the template. They are written using double curly braces `{{ }}`. For example:
+
+```template
+<span>Message: {{ msg }}</span>
+```
+
+The double curly braces `{{ }}` will be replaced with the value of the `msg` variable from the specific component instance that it uses. This allows you to display dynamic data in the template without having to write any JavaScript code. It also automatically updates the DOM when the value of the `msg` variable changes. This makes it easy to create dynamic user interfaces that respond to user input or other events.
+
+## Raw HTML
+
+The double curly braces only interpret the data inside them as plain text, not HTML. In order to render actual HTML, use the `v-html` directive. For example:
+
+```template
+<p>Using text interpolation: {{ rawHtml }}</p>
+<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+```
+
+**Output**
+![result of raw HTML](../../assets/img/raw-html.png)
+The `v-html` directive will render the HTML content of the `rawHtml` variable, allowing you to display HTML elements and attributes in the template. However, be cautious when using `v-html`, as it can expose your application to cross-site scripting (XSS) attacks if the content is not properly sanitized.

@@ -42,6 +42,11 @@ export default defineConfig({
 									label: "Creating an Application",
 									slug: "guides/elements/creating-an-application",
 								},
+								{
+									label: "Template Syntax",
+									slug: "guides/elements/template-syntax",
+								},
+
 								// Add more nested items here if needed
 							],
 						},
